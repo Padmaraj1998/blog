@@ -62,9 +62,10 @@ const exp ={
   const toggleDrawer = () => {
     setDrawerOpen(!isDrawerOpen);
   };
-  const inprogressTask =(event) =>{
-    event.preventDefault();
-    alert("Module is under-construction");
+  const [showPopup, setShowPopup] = useState(false);
+  const inprogressTask =() =>{
+    // alert("Module is under-construction");
+
   }
 function goToLinkedIn(){
     window.open("https://www.linkedin.com/in/padmaraj-s-0a279b16b", "_blank");
@@ -72,15 +73,38 @@ function goToLinkedIn(){
 const goToLeetcode = () => {
   window.open("https://leetcode.com/u/payanraj/", "_blank");
 }
+
+const handleTabClick = (id) => {
+  toggleDrawer(); // Close drawer first
+
+  setTimeout(() => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, 300); // Delay scrolling until after the drawer closes
+};
   return (
     <div style={{ width:'100%',}}>
       <Box sx={{ display: "flex", width:'100%' ,height: "auto" }}>
+      {showPopup && (
+        <div style={{
+          position: "fixed", top: "50%", left: "50%",
+          transform: "translate(-50%, -50%)",
+          borderRadius:"5%",
+          textAlign:"center",
+          padding: "20px",border:"5px solid red",padding:'2% 5%', background: "#EDE8D0", boxShadow: "0px 0px 10px rgba(0,0,0,0.2)"
+        }}>
+          <p>Module is under-construction!</p>
+          <button style={{backgroundColor:"#90D5FF"}}onClick={() => setShowPopup(false)}>Close</button>
+        </div>
+      )}
         {/* Hamburger Menu for Mobile */}
         <IconButton
           onClick={toggleDrawer}
           sx={{
             display: { xs: "block", sm: "none" }, // Show only on mobile
-            position: "absolute",
+            position: "fixed",
             top: 10,
             right: 10,
             zIndex: 1000,
@@ -112,13 +136,13 @@ const goToLeetcode = () => {
               borderRight: 1,
               borderColor: "divider",
               minWidth: "150px",
-                
+              
             }}
           >
-            <Tab label="About me" />
-            <Tab label="Skills" />
-            <Tab label="Experience" />
-            <Tab label="Project" />
+            <Tab label="About me" onClick={() => handleTabClick("About")} />
+            <Tab label="Skills" onClick={() => handleTabClick("Skills")} />
+            <Tab label="Experience" onClick={() => handleTabClick("Experience")}/>
+            <Tab label="Project" onClick={() => setShowPopup(1)}/>
           </Tabs>
         </Drawer>
 
@@ -184,7 +208,7 @@ const goToLeetcode = () => {
               <Tab
                 // href="#Project"
                 label="Project"
-                onClick={()=>inprogressTask}
+                onClick={()=>setShowPopup(true)}
                 sx={{
                   border: "2px solid black",
                   borderRadius: "10px",
