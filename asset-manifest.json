@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Padmaraj1998/blog/static/css/main.f855e6bc.css",
-    "main.js": "/Padmaraj1998/blog/static/js/main.9c9a3841.js",
-    "static/js/488.e75445ad.chunk.js": "/Padmaraj1998/blog/static/js/488.e75445ad.chunk.js",
-    "static/media/profile_pic.jpg": "/Padmaraj1998/blog/static/media/profile_pic.162cc4f05ca5508ca83c.jpg",
-    "static/media/ciarlogo.png": "/Padmaraj1998/blog/static/media/ciarlogo.5ce684037a6488874332.png",
-    "static/media/creamcollar-logo.svg": "/Padmaraj1998/blog/static/media/creamcollar-logo.fc54d7bee04e34f89223be00d66557b5.svg",
-    "static/media/location_icon.svg": "/Padmaraj1998/blog/static/media/location_icon.351870b901810823cc7db9f86f4e54f8.svg",
-    "index.html": "/Padmaraj1998/blog/index.html",
-    "main.f855e6bc.css.map": "/Padmaraj1998/blog/static/css/main.f855e6bc.css.map",
-    "main.9c9a3841.js.map": "/Padmaraj1998/blog/static/js/main.9c9a3841.js.map",
-    "488.e75445ad.chunk.js.map": "/Padmaraj1998/blog/static/js/488.e75445ad.chunk.js.map"
+    "main.css": "/blog/static/css/main.f855e6bc.css",
+    "main.js": "/blog/static/js/main.52368ffa.js",
+    "static/js/488.e75445ad.chunk.js": "/blog/static/js/488.e75445ad.chunk.js",
+    "static/media/profile_pic.jpg": "/blog/static/media/profile_pic.162cc4f05ca5508ca83c.jpg",
+    "static/media/ciarlogo.png": "/blog/static/media/ciarlogo.5ce684037a6488874332.png",
+    "static/media/creamcollar-logo.svg": "/blog/static/media/creamcollar-logo.fc54d7bee04e34f89223be00d66557b5.svg",
+    "static/media/location_icon.svg": "/blog/static/media/location_icon.351870b901810823cc7db9f86f4e54f8.svg",
+    "index.html": "/blog/index.html",
+    "main.f855e6bc.css.map": "/blog/static/css/main.f855e6bc.css.map",
+    "main.52368ffa.js.map": "/blog/static/js/main.52368ffa.js.map",
+    "488.e75445ad.chunk.js.map": "/blog/static/js/488.e75445ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.9c9a3841.js"
+    "static/js/main.52368ffa.js"
   ]
 }
